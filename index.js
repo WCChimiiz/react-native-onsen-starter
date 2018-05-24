@@ -10,4 +10,4 @@ if (__DEV__) {
     global.FormData;
 }
 
-AppRegistry.registerComponent('RNOnsenStarter', () => App);
+AppRegistry.registerComponent('abcz', () => App);

@@ -9,5 +9,9 @@ export default {
     fontSize: 20,
     textAlign: 'center',
     margin: 10
+  },
+  shareText: {
+    fontSize: 20,
+    margin: 10
   }
 };
