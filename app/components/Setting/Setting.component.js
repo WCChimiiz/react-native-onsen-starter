@@ -57,7 +57,7 @@ export default class Setting extends Component {
           }
           onLogoutFinished={() => alert('User logged out')}/>
         <TouchableHighlight onPress={this.shareLinkWithShareDialog.bind(this)}>
-          <Text style={styles.shareText}>Share link with ShareDialog</Text>
+          <Text style={styles.shareText}>Share link with fb</Text>
         </TouchableHighlight>
         <TouchableHighlight onPress={() => { 
           Share.open({
@@ -67,7 +67,13 @@ export default class Setting extends Component {
           }) 
           ;
         }}>
-          <Text style={styles.shareText}>Share link with other</Text>
+          <Text style={styles.shareText}>Share link with native</Text>
+        </TouchableHighlight>
+        <TouchableHighlight onPress={() => {}}>
+          <Text style={styles.shareText}>Share link with tw</Text>
+        </TouchableHighlight>
+        <TouchableHighlight onPress={() => {}}>
+          <Text style={styles.shareText}>Share link with line</Text>
         </TouchableHighlight>
       </View>
     );
