@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Share from 'react-native-share';
 import styles from './Setting.style';
 import {LoginButton, ShareDialog} from 'react-native-fbsdk';
+import {shareOnTwitter} from 'react-native-social-share';
 import {Text, TouchableHighlight, View} from 'react-native';
 
 export default class Setting extends Component {
@@ -69,7 +70,19 @@ export default class Setting extends Component {
         }}>
           <Text style={styles.shareText}>Share link with native</Text>
         </TouchableHighlight>
-        <TouchableHighlight onPress={() => {}}>
+        <TouchableHighlight onPress={() => {
+          shareOnTwitter({
+            'text': 'Global democratized marketplace for art',
+            'link': 'https://artboost.com/',
+            'imagelink': 'https://artboost.com/apple-touch-icon-144x144.png',
+            // or use image
+            'image': 'artboost-icon'
+          },
+          (results) => {
+            console.log(results);
+          }
+          );
+        }}>
           <Text style={styles.shareText}>Share link with tw</Text>
         </TouchableHighlight>
         <TouchableHighlight onPress={() => {}}>

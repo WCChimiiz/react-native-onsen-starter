@@ -3,6 +3,7 @@ package com.com.abcz;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.barefootcoders.android.react.KDSocialShare.KDSocialShare;
 import cl.json.RNSharePackage;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
@@ -36,6 +37,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new KDSocialShare(),
             new RNSharePackage(),
           new VectorIconsPackage(),
           //**  ADD THE FOLLOWING LINE **//

@@ -78,5 +78,12 @@
 	<string>214395869367900</string>
 	<key>FacebookDisplayName</key>
 	<string>Test login and share</string>
+  
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>twitter</string>
+    
+  </array>
+  
 </dict>
 </plist>
