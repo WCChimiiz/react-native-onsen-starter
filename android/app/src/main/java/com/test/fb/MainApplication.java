@@ -1,4 +1,4 @@
-package com.rnonsenstarter;
+package com.test.fb;
 
 import android.app.Application;
 
